@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree';
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Yellow);
+}
+
+.card{
+    width: 384px;
+    height: 491px;
+    background-color: var(--White);
+    border-radius: 20px;
+    border: 1px solid var(--Gray-950);
+    padding: 24px;
+    box-shadow: 8px 8px 0 black;
+    .blog_image{
+        border-radius: 10px;
+        width: 100%;
+    }
+    .content{
+        margin-top: 24px;
+        .category{
+            background-color: var(--Yellow);
+            width: 82px;
+            height: 29px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                font-size: 14px;
+                font-weight: 800;
+            }
+        }
+        h2{
+            font-size: 14px;
+            font-weight: 500;
+            margin: 12px 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        p{
+            color: var(--Gray-500);
+            font-size: 16;
+            font-weight: 500;
+            width: 279px;
+        }
+    }
+    .author{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 24px;
+        img{
+            width: 32px;
+        }
+        h4{
+            font-size: 14px;
+            font-weight: 800;
+        }
+    }
+}
+
+@media screen and (max-width: 376px){
+    .card{
+        width: 327px;
+        .content{
+            width: 73px;
+            height: 26px;
+            h3{
+                font-size: 12px;
+            }
+        }
+        h2{
+            font-size: 12px;
+            width: 200px;
+            margin: 12px 0;
+        }
+        h1{
+            font-size: 18px;
+            width: 300px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
