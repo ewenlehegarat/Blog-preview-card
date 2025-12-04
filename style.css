@@ -24,7 +24,6 @@ body{
 
 .card{
     width: 384px;
-    height: 491px;
     background-color: var(--White);
     border-radius: 20px;
     border: 1px solid var(--Gray-950);
@@ -35,7 +34,7 @@ body{
         width: 100%;
     }
     .content{
-        margin-top: 24px;
+        margin: 24px 0;
         .category{
             background-color: var(--Yellow);
             width: 82px;
@@ -63,14 +62,12 @@ body{
             color: var(--Gray-500);
             font-size: 16;
             font-weight: 500;
-            width: 279px;
         }
     }
     .author{
         display: flex;
         align-items: center;
         gap: 12px;
-        margin-top: 24px;
         img{
             width: 32px;
         }
@@ -84,14 +81,15 @@ body{
 @media screen and (max-width: 430px){
     .card{
         width: 327px;
-        height: 491px;
         .content{
-            h3{
-                font-size: 12px;
+            .category{
+                h3{
+                    font-size: 12px;
+                    font-weight: 500;
+                }
             }
             h2{
                 font-size: 12px;
-                width: 200px;
                 margin: 12px 0;
             }
             h1{
